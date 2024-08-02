@@ -142,7 +142,7 @@ const ScannerAndForm = () => {
             {products.map((product) => (
               <li key={product.key} className="mb-4 border p-4 border-black">
                 <p><strong>Scan Result:</strong> <a href={"http://" + product.scanResult} target="_blank" rel="noopener noreferrer">{product.scanResult}</a></p>
-                <p><strong>Image URL:</strong> {product.productImage}</p>
+                {/* <p><strong>Image URL:</strong> {product.productImage}</p> */}
                 {product.productImage ? (
                   <img src={product.productImage} alt="Product" className="w-32 h-32 object-cover" />
                 ) : (
